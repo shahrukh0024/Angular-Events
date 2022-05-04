@@ -1,0 +1,12 @@
+
+<div class="event">
+    <h2 class="event_name">{{evt.name}}</h2>
+    <p class="event_date">{{evt.date}}</p>
+    <p class="event_time">{{evt.time}}</p>
+    <p class="event_price">{{evt.price}}</p>
+    <p class="event_location">{{evt.location.city}}</p>
+    <p class="event_location">{{evt.location.country}}</p>
+    <div class="btns">
+        <button class="btn btn-primary" [routerLink]="['/ngEvents/details',evt.id]"><i class="fa fa-info-circle"></i> </button>
+    </div>
+</div>

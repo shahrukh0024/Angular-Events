@@ -24,9 +24,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.js"]
           },
           "configurations": {
             "production": {
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Angular-Events"
+    }
+  },
+  "defaultProject": "Angular-Events",
+  "cli": {
+    "analytics": "70e8ab0d-8848-4ff1-b924-e1a2f52d8766"
+  }
 }

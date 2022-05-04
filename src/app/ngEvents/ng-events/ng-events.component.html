@@ -1,0 +1,16 @@
+
+<div class="container">
+    <h2 class="title">Upcoming Angular Events</h2>
+    <hr>
+    <div class="events">
+        <app-ng-event *ngFor="let evt of evts;
+                    index as i; 
+                    count as c;
+                    first as first;
+                    last as last;
+                    odd as odd;
+                    even as even;
+                    " [ngClass]="{even:even,odd:odd,first:first}" [evt]="evt"
+        ></app-ng-event>
+    </div>
+</div>
